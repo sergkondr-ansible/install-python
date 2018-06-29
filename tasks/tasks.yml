@@ -1,6 +1,14 @@
 ---
 
 - name: Install python2 for Ansible
-  raw: bash -c "test -e /usr/bin/python || (apt -qqy update && apt install -qqy python-minimal python-simplejson python-apt python-pip)"
+  raw: bash -c "test -e /usr/bin/python || (apt -qqy update && apt install -qqy python-minimal)"
   register: output
   changed_when: output.stdout != ""
+
+- name: Install some necessary packages
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - python-simplejson
+    - python-apt
+    - python-pip
