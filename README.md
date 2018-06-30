@@ -27,9 +27,9 @@ Example Playbook
 License
 -------
 
-WTFPL
+[WTFPL](https://raw.githubusercontent.com/sergkondr/stuff/master/wtfpl-2018.txt)
 
 Author Information
 ------------------
 
-[Sergey Kondrashov](https://github.com/sergkondr)
+:octocat:[Sergey Kondrashov](https://github.com/sergkondr)
